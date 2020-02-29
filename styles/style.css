@@ -1,0 +1,124 @@
+body,
+html {
+  height: 100%;
+  margin: 0;
+  font-weight: 400;
+  line-height: 1.8em;
+}
+
+html::-webkit-scrollbar {
+  display: none;
+}
+
+.events {
+  background-image: url(../img/bg/bg1.jpg);
+  min-height: 50%;
+  opacity: 0.9;
+  background-position: center;
+  background-size: cover;
+  padding: 12px 24px !important;
+  font-size: 24px !important;
+  font-family: "Trade Winds";
+  background-attachment: fixed;
+  margin-bottom: 10%;
+}
+
+.logo {
+  position: absolute;
+  opacity: 1;
+  left: 0;
+  top: 0;
+  padding: 12px 24px !important;
+  font-size: 24px !important;
+}
+
+.main-heading {
+  position: absolute;
+  opacity: 1;
+  top: 25%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+
+.event-heading {
+  font-size: 64px !important;
+  position: relative;
+  animation: animatetop 1s;
+  letter-spacing: 2em;
+}
+
+@keyframes animatetop {
+  from {
+    top: -100px;
+    opacity: 0;
+  }
+  to {
+    top: 0;
+    opacity: 1;
+  }
+}
+
+.heading-border {
+  margin: auto;
+  width: 40%;
+  border-color: #9e9e9e !important;
+}
+
+.now-open {
+  font-size: 18px !important;
+  text-align: center;
+  letter-spacing: unset;
+}
+
+.event-list {
+    display: flex;
+    justify-content: center;
+}
+
+.each-event {
+  flex-grow: 1;
+  position: relative; 
+}
+
+.each-event img {
+  display: block;
+  position: relative;
+  width: 100%;
+  max-width: 400px;
+  height: 100%;
+  max-height: 400px;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: inherit;
+    max-height: 400px;
+    width: inherit;
+    max-width: 400px;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: black;
+    
+  }
+  
+  .each-event:hover .overlay {
+    opacity: 0.8;
+  }
+
+  .text {
+    color: white;
+    opacity: 1;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
